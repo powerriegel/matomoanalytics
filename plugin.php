@@ -5,26 +5,26 @@ class pluginMatomoAnalytics extends Plugin {
         public function init()
         {
                 $this->dbFields = [
-                        'matomo-fqdn'=>'',
-                        'site-id'   =>'',
-                        'token'     => ''
+                        'matomo-fqdn'   => '',
+                        'site-id'       => '',
+                        'token'         => ''
                 ];
         }
 
         public function form()
         {
-                global $Language;
+                global $L;
 
                 $html  = '<div>';
-                $html .= '<label for="jsmatomo-fqdn">'.$Language->get('Matomo Server FQDN').'</label>';
-                $html .= '<input id="jsmatomo-fqdn" type="text" name="matomo-fqdn" value="'.$this->getDbField('matomo-fqdn').'">';
-                $html .= '<div class="tip">'.$Language->get('complete-this-field-with-the-matomo-server-fqdn').'</div>';
+                $html .= '<label for="jsmatomo-fqdn">'.$L->get('Matomo Server FQDN').'</label>';
+                $html .= '<input id="jsmatomo-fqdn" type="text" name="matomo-fqdn" value="'.$this->getValue('matomo-fqdn').'">';
+                $html .= '<div class="tip">'.$L->get('complete-this-field-with-the-matomo-server-fqdn').'</div>';
                 $html .= '</div>';
 
                 $html .= '<div>';
-                $html .= '<label for="jssite-id">'.$Language->get('Matomo Site ID').'</label>';
-                $html .= '<input id="jssite-id" type="text" name="site-id" value="'.$this->getDbField('site-id').'">';
-                $html .= '<div class="tip">'.$Language->get('complete-this-field-with-the-matomo-site-id').'</div>';
+                $html .= '<label for="jssite-id">'.$L->get('Matomo Site ID').'</label>';
+                $html .= '<input id="jssite-id" type="text" name="site-id" value="'.$this->getValue('site-id').'">';
+                $html .= '<div class="tip">'.$L->get('complete-this-field-with-the-matomo-site-id').'</div>';
                 $html .= '</div>';
 
                 return $html;
@@ -39,9 +39,9 @@ class pluginMatomoAnalytics extends Plugin {
                 $html .= '_paq.push([\'trackPageView\']);'.PHP_EOL;
                 $html .= '_paq.push([\'enableLinkTracking\']);'.PHP_EOL;
                 $html .= '(function() {'.PHP_EOL;
-                $html .= '  var u="//'.htmlentities($this->getDbField('matomo-fqdn')).'/";'.PHP_EOL;
+                $html .= '  var u="//'.htmlentities($this->getValue('matomo-fqdn')).'/";'.PHP_EOL;
                 $html .= '  _paq.push([\'setTrackerUrl\', u+\'matomo.php\']);'.PHP_EOL;
-                $html .= '  _paq.push([\'setSiteId\', \''.htmlentities($this->getDbField('site-id')).'\']);'.PHP_EOL;
+                $html .= '  _paq.push([\'setSiteId\', \''.htmlentities($this->getValue('site-id')).'\']);'.PHP_EOL;
                 $html .= '  var d=document, g=d.createElement(\'script\'), s=d.getElementsByTagName(\'script\')[0];'.PHP_EOL;
                 $html .= '  g.type=\'text/javascript\'; g.async=true; g.defer=true; g.src=u+\'matomo.js\'; s.parentNode.insertBefore(g,s);'.PHP_EOL;
 		        $html .= '})();'.PHP_EOL.'</script>'.PHP_EOL;
