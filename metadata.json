@@ -1,10 +1,8 @@
 {
-	"author": "Luis Garnica Guilarte",
-	"email": "luisgarnica42@gmail.com",
-	"website": "http://sgarnica.org/",
-	"version": "0.1",
-	"releaseDate": "2017-11-17",
+	"author": "C. Amzar",
+	"version": "0.5",
+	"releaseDate": "2021-10-31",
 	"license": "MIT",
-	"compatible": "1.5.2,1.6,1.6.1,1.6.2",
+	"compatible": "3.13",
 	"notes": ""
 }
