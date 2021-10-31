@@ -4,7 +4,7 @@ class pluginMatomoAnalytics extends Plugin {
 
         public function init()
         {
-                $this->dbFields = []
+                $this->dbFields = [
                         'matomo-fqdn'=>'',
                         'site-id'   =>'',
                         'token'     => ''
