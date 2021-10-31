@@ -1,10 +1,10 @@
 {
 	"plugin-data":
 	{
-		"name": "Piwik Analytics",
-		"description": "This plugin appends a Piwik Analytics tracking code to the head part of the site."
+		"name": "Matomo Analytics",
+		"description": "This plugin appends a Matomo Analytics tracking code to the head part of the site."
 	},
 
-	"complete-this-field-with-the-piwik-server-fqdn": "Complete this field with Piwik's server Full Qualified Domain Name, e.g. piwik.myserver.com",
-	"complete-this-field-with-the-piwik-site-id": "Complete this field with the tracked site ID (look for it in Piwik's tracking code on the line _paq.push(['setSiteId', 'id#']);)"
+	"complete-this-field-with-the-matomo-server-fqdn": "Complete this field with Matomo's server Full Qualified Domain Name, e.g. matomo.myserver.com",
+	"complete-this-field-with-the-matomo-site-id": "Complete this field with the tracked site ID (look for it in Matomo's tracking code on the line _paq.push(['setSiteId', 'id#']);)"
 }

@@ -1,10 +1,10 @@
 {
 	"plugin-data":
 	{
-		"name": "Piwik Analytics",
-		"description": "Este plugin agrega el tracking code de Piwik Analytics a la cabecera (head) del sitio."
+		"name": "Matomo Analytics",
+		"description": "Este plugin agrega el tracking code de Matomo Analytics a la cabecera (head) del sitio."
 	},
 
-	"complete-this-field-with-the-piwik-server-fqdn": "Completa este campo con el dominio completo (FQDN) donde se encuentra el servicio Piwik, ejemplo: piwik.midominio.com",
-	"complete-this-field-with-the-piwik-site-id": "Completa este campo con el ID del sitio rastreado (Se encuentra en el tracking code de Piwik en  _paq.push(['setSiteId', 'id#']);) id# es un número que representa el ID"
+	"complete-this-field-with-the-matomo-server-fqdn": "Completa este campo con el dominio completo (FQDN) donde se encuentra el servicio Matomo, ejemplo: matomo.midominio.com",
+	"complete-this-field-with-the-matomo-site-id": "Completa este campo con el ID del sitio rastreado (Se encuentra en el tracking code de Matomo en  _paq.push(['setSiteId', 'id#']);) id# es un número que representa el ID"
 }
