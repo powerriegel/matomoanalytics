@@ -48,4 +48,13 @@ class pluginMatomoAnalytics extends Plugin {
                 $html .= '<!-- End Matomo Code -->'.PHP_EOL;
                 return $html;
         }
+	
+	public function siteBodyEnd() 
+        {
+            $html = [];
+            $html[] = '<!-- Matomo Image Tracker-->';
+            $html[] = '<noscript><img referrerpolicy="no-referrer-when-downgrade" src="//'.htmlentities($this->getValue('matomo-fqdn')).'/matomo.php?idsite='.htmlentities($this->getValue('site-id')).'&amp;rec=1" style="border:0" alt="" /></noscript>';
+            $html[] = '<!-- End Matomo -->';
+            return implode(PHP_EOL, $html);
+        }
 }
