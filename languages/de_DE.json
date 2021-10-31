@@ -2,9 +2,9 @@
 	"plugin-data":
 	{
 		"name": "Matomo Analytics",
-		"description": "This plugin appends the Matomo tracking code to the head part of the site."
+		"description": "Dieses Plugin fügt einen Matomo tracking code hinzu."
 	},
 
-	"complete-this-field-with-the-matomo-server-fqdn": "Complete this field with Matomo's server Full Qualified Domain Name, e.g. matomo.myserver.com",
-	"complete-this-field-with-the-matomo-site-id": "Complete this field with the tracked site ID (look for it in Matomo's tracking code on the line _paq.push(['setSiteId', 'id#']);)"
+	"complete-this-field-with-the-matomo-server-fqdn": "Gib hier den Domainnamen des Matomo-Servers ein, z.B. matomo.example.com",
+	"complete-this-field-with-the-matomo-site-id": "Gibt hier die SiteID ein (sie steht in Matomo unter 'Webseiten')"
 }
