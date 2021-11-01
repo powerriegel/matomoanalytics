@@ -49,11 +49,7 @@ class pluginMatomoAnalytics extends Plugin {
                 return $html;
         }
 
-        public function siteBodyEnd() 
-=======
-	
-	public function siteBodyEnd() 
->>>>>>> cafac93551bcebe0002ea742070ed3d93475a325
+	    public function siteBodyEnd() 
         {
             $html = [];
             $html[] = '<!-- Matomo Image Tracker-->';
